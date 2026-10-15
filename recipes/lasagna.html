@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- ЗМІНЕНО [1]: додано meta viewport (коректне відображення на телефоні) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ЗМІНЕНО [2]: додано title (його не було; потрібен для вкладки браузера й пошуку) -->
+    <title>Sheet Pan Lasagna</title>
 </head>
 <body>
-<h1>Sheet Pan Lasagna</h1>
-<p>This sheet pan lasagna saves the effort of layering and offers up more crispy edges,</p>
-<p> which we all know is the best part of lasagna.</p> 
-<p>With sausage and a spinach-ricotta mixture, and cheese atop all,</p>
-<p> it's a fun way to make an old favorite.</p>
-<img src="images/lasagna.jpg.webp" alt="Sheet Pan Lasagna" width="400px" height="400px">
-<div>
-    <div>
-        <h3>Prep Time</h3>
-        <p>15 mins</p>
-    </div>
-    <div>
-        <h3>Cook Time</h3>
-        <p>45 mins</p>
-    </div>
-        <h3>Total Time</h3>
-        <p>60 mins</p>
-    </div>
-    <div>
-        <h3>Servings</h3>
-        <p>4</p>
-    </div>
-</div>
-<h1>Ingredients</h1>
+<!-- ЗМІНЕНО [3]: вміст обгорнуто в main, а вступ і час у header (семантичні теги замість голих div) -->
+<main>
+<header>
+    <h1>Sheet Pan Lasagna</h1>
+    <!-- ЗМІНЕНО [4]: 4 рядки тексту, розірвані на окремі <p>, зведено в один абзац -->
+    <p>This sheet pan lasagna saves the effort of layering and offers up more crispy edges, which we all know is the best part of lasagna. With sausage and a spinach-ricotta mixture, and cheese atop all, it's a fun way to make an old favorite.</p>
+
+    <!-- ЗМІНЕНО [5]: figure + змістовний alt; width/height без "px" (у HTML-атрибутах одиниці не пишуть) -->
+    <figure>
+        <img src="images/lasagna.jpg.webp" alt="Finished sheet pan lasagna with golden, crispy cheese" width="400" height="400">
+    </figure>
+
+    <!-- ЗМІНЕНО [6]: блок часу переписано на dl; виправлено відсутній відкривальний <div> для Total Time і зайвий закривальний </div> -->
+    <dl>
+        <div>
+            <dt>Prep Time</dt>
+            <dd>15 mins</dd>
+        </div>
+        <div>
+            <dt>Cook Time</dt>
+            <dd>45 mins</dd>
+        </div>
+        <div>
+            <dt>Total Time</dt>
+            <dd>60 mins</dd>
+        </div>
+        <div>
+            <dt>Servings</dt>
+            <dd>4</dd>
+        </div>
+    </dl>
+</header>
+
+<!-- ЗМІНЕНО [7]: h1 → h2 (на сторінці має бути один h1); секція обгорнута в section -->
+<section>
+    <h2>Ingredients</h2>
+    <!-- ЗМІНЕНО [8]: прибрано зайві відступи; список без змін за змістом -->
     <ul>
         <li>4 tablespoons olive oil, or as needed</li>
         <li>2 cloves garlic, minced, or more to taste</li>
@@ -40,71 +57,80 @@
         <li>2 1/2 cups shredded low-moisture mozzarella cheese</li>
         <li>1 1/2 cups grated Parmesan cheese</li>
     </ul>
-        <h1>Directions</h1>
-        <p><strong>Step 1: </strong></p>
-        <p>Gather all ingredients. Preheat the oven to 425 degrees F (220 degrees C). Grease</p>
-        <p>a 12x17-inch baking sheet with 1 to 2 tablespoons olive oil for a thin, crisp sheet-</p>
-        <p>pan version, or use a 9x13-inch baking dish for a cozier, “pasta bake” feel.</p>
-        <img src="images/lasagna1.jpg.webp" alt="Step 1:" width="400px" height="400px">
-        <p><strong>Step 2:</strong></p>
-        <p>Heat 1 tablespoon olive oil in a frying pan over medium heat. Add garlic and</p>
-        <p>sauté until fragrant, about 30 seconds. Add spinach and salt; cook, stirring, until</p>
-        <p>wilted, about 3 minutes.</p>
-        <img src="images/lasagna2.jpg.webp" alt="Step 2:" width="400px" height="400px">
-        <p><strong>Step 3:</strong></p>
-        <p>Transfer spinach to a bowl. Use kitchen shears to roughly chop,<br>then stir in ricotta cheese. Set aside.</p>
-        <img src="images/lasagna3.jpg" alt="Step 3:" width="400px" height="400px">
-        <p><strong>Step 4:</strong></p>
-        <p>Wipe out the frying pan with a paper towel. Add remaining 2</p>
-        <p>tablespoons olive oil and sausage. Cook undisturbed for 1 to 2</p>
-        <p>minutes to get some browning, then break sausage apart with</p>
-        <p>a spatula. Continue cooking until browned throughout, about</p>
-        <p>5 minutes. Add red onion and sauté until softened, about 3</p>
-        <p>minutes. Remove from heat.</p>
-        <img src="images/lasagna4.jpg" alt="Step 4:" width="400px" height="400px"> 
-        <p><strong>Step 5:</strong></p>
-        <p>Meanwhile, bring a large pot of salted water to a boil. Add</p>
-        <p>lasagna sheets and cook for 4 minutes, stirring occasionally to</p>
-        <p>prevent sticking. Drain and return to the pot. If you aren’t</p>
-        <p>immediately mixing with the sauce mixture (next step), toss</p>
-        <p>pasta in a drizzle of olive oil to prevent sticking.</p>
-        <img src="images/lasagna5.jpg" alt="Step 5:" width="400px" height="400px">
-        <p><strong>Step 6:</strong></p>
-        <p>Stir marinara sauce into sausage mixture. Pour sausage and</p>
-        <p>sauce into the pot with pasta. Add 1 1/2 cups mozzarella and 1</p>
-        <p>cup Parmesan, stirring until evenly coated.</p>
-        <img src="images/lasagna6.jpg" alt="Step 6:" width="400px" height="400px">
-        <p><strong>Step 7:</strong></p>
-        <p>Spread pasta mixture evenly on the prepared baking sheet or</p>
-        <p>in the baking dish. Sprinkle remaining cheese on top. Spoon o</p>
-        <p>dollop the spinach-ricotta mixture across the surface.</p>
-        <img src="images/lasagna7.jpg" alt="Step 7:" width="400px" height="400px">
-        <p><strong>Step 8:</strong></p>
-        <p>Bake in the preheated oven, uncovered, until cheese is golden,</p>
-        <p>sauce is bubbling, and edges are lightly crisped, about 30</p>
-        <p>minutes.</p>
-        <img src="images/lasagna8.jpg" alt="Step 8:" width="400px" height="400px">
-        <p><strong>Step 9:</strong></p>
-        <p>Serve warm with extra marinara sauce and a sprinkle of</p>
-        <p>cheese, if desired. Enjoy!</p>
-        <img src="images/lasagna9.jpg" alt="Step 9: Ready meal" width="400px" height="400px">
-        <h1>Nutrition Facts<h4>(per serving)</h4></h1>
-    <div>
+</section>
+
+<section>
+    <h2>Directions</h2>
+    <!-- ЗМІНЕНО [9]: ручне «Step N:» у <strong> замінено на <ol>; нумерацію робить браузер -->
+    <ol>
+        <li>
+            <!-- ЗМІНЕНО [4]: абзац зведено в один; «sheet-» і «pan» склеєно в «sheet-pan» -->
+            <p>Gather all ingredients. Preheat the oven to 425 degrees F (220 degrees C). Grease a 12x17-inch baking sheet with 1 to 2 tablespoons olive oil for a thin, crisp sheet-pan version, or use a 9x13-inch baking dish for a cozier, “pasta bake” feel.</p>
+            <!-- ЗМІНЕНО [10]: alt «Step 1:» замінено на опис того, що на фото (так само в усіх кроках) -->
+            <img src="images/lasagna1.jpg.webp" alt="Baking sheet greased with olive oil" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Heat 1 tablespoon olive oil in a frying pan over medium heat. Add garlic and sauté until fragrant, about 30 seconds. Add spinach and salt; cook, stirring, until wilted, about 3 minutes.</p>
+            <img src="images/lasagna2.jpg.webp" alt="Spinach wilting with garlic in a frying pan" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <!-- ЗМІНЕНО [11]: прибрано <br> усередині абзацу -->
+            <p>Transfer spinach to a bowl. Use kitchen shears to roughly chop, then stir in ricotta cheese. Set aside.</p>
+            <!-- ПРИМІТКА [12]: розширення файлів (.jpg.webp / .jpg) залишено як були, щоб не зламати шляхи. Варто привести до одного формату (наприклад, .webp) і перейменувати файли -->
+            <img src="images/lasagna3.jpg" alt="Chopped spinach mixed with ricotta in a bowl" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Wipe out the frying pan with a paper towel. Add remaining 2 tablespoons olive oil and sausage. Cook undisturbed for 1 to 2 minutes to get some browning, then break sausage apart with a spatula. Continue cooking until browned throughout, about 5 minutes. Add red onion and sauté until softened, about 3 minutes. Remove from heat.</p>
+            <img src="images/lasagna4.jpg" alt="Browned sausage and red onion in a frying pan" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Meanwhile, bring a large pot of salted water to a boil. Add lasagna sheets and cook for 4 minutes, stirring occasionally to prevent sticking. Drain and return to the pot. If you aren’t immediately mixing with the sauce mixture (next step), toss pasta in a drizzle of olive oil to prevent sticking.</p>
+            <img src="images/lasagna5.jpg" alt="Drained lasagna pieces in a pot" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Stir marinara sauce into sausage mixture. Pour sausage and sauce into the pot with pasta. Add 1 1/2 cups mozzarella and 1 cup Parmesan, stirring until evenly coated.</p>
+            <img src="images/lasagna6.jpg" alt="Pasta coated in sausage and marinara sauce" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <!-- ЗМІНЕНО [13]: виправлено одруківку «Spoon o» → «Spoon or» -->
+            <p>Spread pasta mixture evenly on the prepared baking sheet or in the baking dish. Sprinkle remaining cheese on top. Spoon or dollop the spinach-ricotta mixture across the surface.</p>
+            <img src="images/lasagna7.jpg" alt="Pasta spread on the baking sheet topped with spinach-ricotta" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Bake in the preheated oven, uncovered, until cheese is golden, sauce is bubbling, and edges are lightly crisped, about 30 minutes.</p>
+            <img src="images/lasagna8.jpg" alt="Baked lasagna with golden cheese and bubbling sauce" width="400" height="400" loading="lazy">
+        </li>
+        <li>
+            <p>Serve warm with extra marinara sauce and a sprinkle of cheese, if desired. Enjoy!</p>
+            <img src="images/lasagna9.jpg" alt="Served portion of sheet pan lasagna" width="400" height="400" loading="lazy">
+        </li>
+    </ol>
+</section>
+
+<section>
+    <!-- ЗМІНЕНО [14]: <h4> більше не вкладений у <h1>; заголовок став h2, «(per serving)» — звичайним абзацом -->
+    <h2>Nutrition Facts</h2>
+    <p>Per serving</p>
+    <!-- ЗМІНЕНО [15]: виправлено незакритий <div> у блоці Fat; блок переписано на dl, як і час приготування -->
+    <dl>
         <div>
-            <h3>1290</h3>
-            <p>Calories</p>
+            <dt>Calories</dt>
+            <dd>1290</dd>
         </div>
         <div>
-            <h3>90 g</h3>
-            <p>Fat</p>
-        <div>
-            <h3>48 g</h3>
-            <p>Carbohydrates</p>
+            <dt>Fat</dt>
+            <dd>90 g</dd>
         </div>
         <div>
-            <h3>73 g</h3>
-            <p>Protein</p>
+            <dt>Carbohydrates</dt>
+            <dd>48 g</dd>
         </div>
-    </div>
+        <div>
+            <dt>Protein</dt>
+            <dd>73 g</dd>
+        </div>
+    </dl>
+</section>
+</main>
 </body>
 </html>
