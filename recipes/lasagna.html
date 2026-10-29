@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- ЗМІНЕНО [2]: додано title (його не було; потрібен для вкладки браузера й пошуку) -->
     <title>Sheet Pan Lasagna</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
     <ul>
@@ -45,7 +46,7 @@
 </header>
 
 <!-- ЗМІНЕНО [7]: h1 → h2 (на сторінці має бути один h1); секція обгорнута в section -->
-<section>
+<section class="ingredients">
     <h2>Ingredients</h2>
     <!-- ЗМІНЕНО [8]: прибрано зайві відступи; список без змін за змістом -->
     <ul>
@@ -62,19 +63,19 @@
     </ul>
 </section>
 
-<section>
+<section class="directions">
     <h2>Directions</h2>
     <!-- ЗМІНЕНО [9]: ручне «Step N:» у <strong> замінено на <ol>; нумерацію робить браузер -->
     <ol>
         <li>
             <!-- ЗМІНЕНО [4]: абзац зведено в один; «sheet-» і «pan» склеєно в «sheet-pan» -->
             <p>Gather all ingredients. Preheat the oven to 425 degrees F (220 degrees C). Grease a 12x17-inch baking sheet with 1 to 2 tablespoons olive oil for a thin, crisp sheet-pan version, or use a 9x13-inch baking dish for a cozier, “pasta bake” feel.</p>
-            <!-- ЗМІНЕНО [10]: alt «Step 1:» замінено на опис того, що на фото (так само в усіх кроках) -->
+            <!-- ЗМІНЕНО [10]: alt «Step 1:» замінено на опис того, що на фото (так samo в усіх кроках) -->
             <img src="images/lasagna1.jpg.webp" alt="Baking sheet greased with olive oil" width="400" height="400" loading="lazy">
         </li>
         <li>
             <p>Heat 1 tablespoon olive oil in a frying pan over medium heat. Add garlic and sauté until fragrant, about 30 seconds. Add spinach and salt; cook, stirring, until wilted, about 3 minutes.</p>
-            <img src="images/lasagna2.jpg.webp" alt="Spinach wilting with garlic in a frying pan" width="400" height="400" loading="lazy">
+            <img src="images/lasagna2.jpg" alt="Spinach wilting with garlic in a frying pan" width="400" height="400" loading="lazy">
         </li>
         <li>
             <!-- ЗМІНЕНО [11]: прибрано <br> усередині абзацу -->
@@ -110,7 +111,7 @@
     </ol>
 </section>
 
-<section>
+<section class="nutrition">
     <!-- ЗМІНЕНО [14]: <h4> більше не вкладений у <h1>; заголовок став h2, «(per serving)» — звичайним абзацом -->
     <h2>Nutrition Facts</h2>
     <p>Per serving</p>
