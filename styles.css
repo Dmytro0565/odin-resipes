@@ -1,10 +1,9 @@
 h1 {
     color:rgb(0, 0, 0);
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-}
-
+    font-weight: 700;
 }
 .ingredients li {
     color:green;
@@ -12,8 +11,9 @@ h1 {
 
 .featured,.featured1,.featured2 { 
     display: block;
-    width:350px;
-    margin: 15px auto;
+    width:100%;
+    max-width: 350px;
+    margin: 0;
     padding: 12px;
     text-align: center;
     background-color: black;
@@ -32,10 +32,11 @@ h1 {
 }
 .featured:hover, .featured1:hover, .featured2:hover {
     background-color: #333333;
-
+    }
 h2 {
     text-align: center;
     color:rgb(243, 7, 7);
+    font-weight: 600;
 }
 img {
     display: block;
@@ -47,3 +48,22 @@ img {
 a:hover {
         color:orange;
     }
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+p {
+    line-height: 1.8;
+}
