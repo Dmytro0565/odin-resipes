@@ -5,6 +5,7 @@ h1 {
     text-align: center;
     font-weight: 700;
 }
+
 .ingredients li {
     color:green;
 }
@@ -21,34 +22,42 @@ h1 {
     text-decoration: none;
     border-radius: 8px;
 }
+
 .featured {
     border: 2px solid red;
 }
+
 .featured1 {
     border: 2px solid blue;
 }
+
 .featured2 {
     border: 2px solid green;
 }
+
 .featured:hover, .featured1:hover, .featured2:hover {
     background-color: #333333;
-    }
+}
+
 h2 {
     text-align: center;
     color:rgb(243, 7, 7);
     font-weight: 600;
 }
+
 img {
     display: block;
     margin: 0 auto;
     width: 400px;
     max-width: 100%;
     height: auto; 
-    } 
+}
+
 a:hover {
         color:orange;
-    }
-.container {
+}
+
+.container  {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto; 
@@ -59,11 +68,25 @@ a:hover {
     gap: 15px;
     flex-wrap: wrap;
 }
+
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.8;
 }
+
 p {
     line-height: 1.8;
+}
+
+.nutrition dl,.recipe-time  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+:root {
+    --main-color: black;
+    --accent-color: red;
+    --main-gap: 20px;
 }
