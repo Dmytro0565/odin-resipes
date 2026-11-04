@@ -6,21 +6,24 @@ h1 {
     font-weight: 700;
 }
 
+
 .ingredients li {
     color:green;
 }
 
-.featured,.featured1,.featured2 { 
+.featured,.featured1,.featured2, .button-home { 
     display: block;
-    width:100%;
-    max-width: 350px;
+    width: 400px;;
+    max-width: 100%;
     margin: 0;
     padding: 12px;
     text-align: center;
-    background-color: black;
+    background-color: rgba(26, 61, 221, 0.616);
     color: white;
     text-decoration: none;
     border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s transform 0.2s;
 }
 
 .featured {
@@ -35,11 +38,15 @@ h1 {
     border: 2px solid green;
 }
 
-.featured:hover, .featured1:hover, .featured2:hover {
-    background-color: #333333;
+.button-home {
+    border: 2px solid orange;
+}
+.featured:hover, .featured1:hover, .featured2:hover, .button-home:hover {
+    background-color: s#d11d35;
+    transform: scale(1.05);
 }
 
-h2 {
+h2, h1 {
     text-align: center;
     color:rgb(243, 7, 7);
     font-weight: 600;
@@ -60,7 +67,9 @@ a:hover {
 .container  {
     width: 90%;
     max-width: 1000px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    list-style: none;
+    padding: 0; 
     display: flex;
     flex-direction: column;
     justify-content: center;
